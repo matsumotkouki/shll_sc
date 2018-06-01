@@ -5,7 +5,7 @@ password=hoge
 lain=1
 fast=0
 loopmax=1632170
-for ((i=$student_number;i<$loopmax;i++))
+for ((i=$student_name;i<$loopmax;i++))
 do
 	if [ $fast -eq 0  ]; then
 		let student_name++
