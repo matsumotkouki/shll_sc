@@ -1,11 +1,11 @@
 #!/bin/bash
 student_id=13
-student_number=1632001
+student_name=1632001
 password=hoge
 lain=1
 fast=0
 loopmax=1632170
-for ((i=0;i<$loopmax;i++))
+for ((i=$student_number;i<$loopmax;i++))
 do
 	if [ $fast -eq 0  ]; then
 		let student_name++
