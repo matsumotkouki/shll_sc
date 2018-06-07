@@ -9,7 +9,7 @@ echo 'どの学生番号からパスワードを発行しますか？'
 read student_name
 echo 'どの学生番号までパスワードを発行しますか？'
 read end
-echo '最後のstudent_idを入力してください'
+echo '最後のstudent_idに１を足した値を入力してください'
 read student_id
 echo 'splのファイルパスを指定してください(例：./Documents/test.sql)'
 read filepass
