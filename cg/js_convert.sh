@@ -1,11 +1,11 @@
 #!/bin/bash
-pas=./Documents/js_convert_dir
+pass=/Users/matsumoto/Documents/js_convert_dir
 line=1
-max=$(ls | grep obj | wc -l)
+max=$(ls "$pass" | grep obj | wc -l)
 
 while [ $line -le $max ]
 do
-	cd $pas
+	cd $pass
 	obj=$(ls | grep obj | sed -n "$line"p)
 	js=$(ls | grep obj | sed -n "$line"p | sed -e "s/.obj//")
 	python convert_obj_three.py -i $obj -o $js.js
