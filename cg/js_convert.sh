@@ -7,7 +7,7 @@ while [ $line -le $max ]
 do
 	cd $pas
 	obj=$(ls | grep obj | sed -n "$line"p)
-	js=$(ls | grep fbx | sed -n "$line"p | tr -d .fbx)
+	js=$(ls | grep obj | sed -n "$line"p | tr -d .fbx)
 	python convert_obj_three.py -i $obj -o $js.js
 	let line++
 done
