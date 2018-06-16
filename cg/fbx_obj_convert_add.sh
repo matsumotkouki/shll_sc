@@ -1,6 +1,8 @@
 #!/bin/bash
-mel_pass=/Users/matsumoto/Documents/CG_conbert_dir/
-fbx_pass=/Users/matsumoto/Documents/CG_conbert_dir/obj_convert_dir/hand2/
+echo 'melが保存されているディレクトリを入力してください(最後は/で入力してください)'
+read mel_pass
+echo 'CGが保存されているディレクトリを入力してください(最後は/で入力してください)'
+read fbx_pass
 line=1
 max=$(ls $fbx_pass | grep fbx | wc -l)
 
