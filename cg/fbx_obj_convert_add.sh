@@ -2,7 +2,7 @@
 mel_pass=/Users/matsumoto/Documents/CG_conbert_dir/
 fbx_pass=/Users/matsumoto/Documents/CG_conbert_dir/obj_convert_dir/hand2/
 line=1
-max=$(ls "$fbx_pass" | grep fbx | wc -l)
+max=$(ls $fbx_pass | grep fbx | wc -l)
 
 while [ $line -le $max ]
 do
