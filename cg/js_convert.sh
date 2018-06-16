@@ -1,5 +1,5 @@
 #!/bin/bash
-pass=/Users/matsumoto/Documents/js_convert_dir
+pass=/Users/matsumoto/Documents/CG_convert_dir/js_convert_dir
 line=1
 max=$(ls "$pass" | grep obj | wc -l)
 
