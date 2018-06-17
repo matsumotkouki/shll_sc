@@ -7,6 +7,6 @@ while [ $line -le $max ]
 do
 	cd $pass
 	filename=$(ls | grep js | sed -n "$line"p | sed -e "s/.js//")
-	cp $filename.js .js/$filename.js
+	cp $filename.js js/$filename.js
 	let line++
 done
