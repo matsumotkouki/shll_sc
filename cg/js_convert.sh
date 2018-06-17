@@ -8,6 +8,7 @@ do
 	cd $pass
 	obj=$(ls | grep obj | sed -n "$line"p)
 	js=$(ls | grep obj | sed -n "$line"p | sed -e "s/.obj//")
-	python convert_obj_three.py -i $obj -o $js.js
+	#python2.7対応
+	python convert_obj_three.py -i $obj -o ${js}.js
 	let line++
 done
